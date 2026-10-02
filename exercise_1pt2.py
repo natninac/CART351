@@ -125,6 +125,8 @@ print("  Radishes")
 # "vegetables" (defined above), but with the first letter of each item capitalized.
 # (The list should contain the item that you added to the list in task 17.)
 
+for i in vegetables:
+	print(i.capitalize())
 
 
 
@@ -141,8 +143,8 @@ print("  9-18-25")
 # statement displays "9-18-25".
 
 
-separator = "?"
-glue = "?"
+separator = "/18/"
+glue = "-18-"
 parts = "9/18/25".split(separator)
 print(parts[-1])
 print(glue.join(parts))
@@ -163,11 +165,12 @@ print("Expected output: alpha, beta, gamma, delta, epsilon, zeta, eta, theta")
 
 greek = ["alpha", "beta", "gamma", "delta", "epsilon","zeta"]
 new_letters = "eta theta"
-new_letters_list = [] # <-- replace this
+new_letters_list = [new_letters.split()]
 
 for letter_name in new_letters_list:
-	pass # <-- and replace this
+	greek.append('eta')
+	greek.append('theta')
 
-glue = "?" # <-- and replace this
+glue = ", "
 
 print(glue.join(greek))
