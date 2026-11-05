@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hi, {{ user.username }}!</h1>
+    <section class = "flex-intro">
+    <div class="items">
+    {% for item in passedDictionary %}
+    
+        <p>The key is: <span class ="dict_key">{{item}}</span> and the value is: 
+        <span class ="dict_value">{{passedDictionary[item]}}</span>
+    </p>
+
+    {% endfor %}
+    </div>
+    <div class = "img_div">
+        <img src = {{imgPath}} />
+    </div>
+    </section>
+{% endblock %}
+
+ {%if plantData%}
+             Thank you {{plantData['o_name']}} for adding a new plant into the plant repo!
+            Additional Plant info:
+            
+            {% for p_item in plantData %}
+            {{p_item}}: {{plantData[p_item]}}
+            
+            {%endfor %}
+            {%else%}
+             Thank you for adding a new plant into the plant repo!
+
+            {%endif %}
