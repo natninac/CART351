@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  background: #f7f4eb;
+  color: #111;
+}
+
+main {
+  max-width: 640px;
+  margin: 60px auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+textarea {
+  height: 300px;
+  font: inherit;
+  font-size: 18px;
+  padding: 16px;
+  border: 1px solid #d0d0cd;
+  background: #fff;
+  resize: vertical;
+}
+
+button {
+  align-self: flex-start;
+  font: inherit;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+#report p {
+  margin: 4px 0;
+}
+
+.entry {
+  border-top: 1px solid #d0d0cd;
+  padding-top: 8px;
+}
+
+.entry h2 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #5d5b5b;
+  margin: 0 0 8px;
+}
+
+.entry p {
+  margin: 4px 0;
+}
+
+.name {
+  height: 30px;
+}
