@@ -29,7 +29,7 @@ A vending machine interface where users "order" items of data about themselves, 
 ---
 
 ## 2. Phishing Website
-**Creator:** Kervin
+**Creator:** Kerven
 
 ### Concept & Implementation
 A website built to phish its visitors. It acts like a familiar web experience while collecting information about the person using it in the background, then reveals what it took.
